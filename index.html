@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Example</title>
+    <style>
+        .body-container {
+            margin: 0;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 20vw 60vw 20vw;
+            grid-template-rows: 15vh 70vh 15vh;
+            background-color: aqua;
+        }
+        .header-item {
+            grid-area: 1 / 1 / 2 / 4;
+            background-color: blue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .menu {
+            grid-area: 2 / 1 / 4 / 2;
+            background-color: red;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+        }
+        .main-item {
+            grid-area: 2 / 2 / 3 / 3;
+            background-color: blueviolet;
+            padding: 40px;
+        }
+        .right-item {
+            grid-area: 2 / 3 / 3 / 4;
+            background-color: chartreuse;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .footer-item {
+            grid-area: 3 / 2 / 4 / 4;
+            background-color: darkgreen;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .text-container {
+            margin: 20px;
+            height: 75%;
+            width: 75%;
+            border-style: solid;
+            border-width: 2px;
+        }
+    </style>
+</head>
+<body class="body-container">
+    <div class="container">
+        <header class="header-item">Header</header>
+        <menu class="menu-item">
+            <ul>
+                <li>a</li>
+                <li>b</li>
+                <li>c</li>
+                <li>d</li>
+            </ul>
+        </menu>
+        <main class="main-item">Main
+            <div class="text-container">
+                <p>text. text. text. text. text. text. text. text. text. text. 
+                    text. text. text. text. text. text. text. text. text. text. 
+                    text. text. text. text. text. text. text. text. text. text. 
+                    text. text. text. text. text. text. text. text. text. text. 
+                    text. text.
+                </p> <br>
+                <p>text. text. text. text. text. text. text. text. text. text. 
+                    text. text. text. text. text. text. text. text. text. text. 
+                    text. text. text. text. text. text. text. text. text. text. 
+                    text. text. text. text. text. text. text. text. text. text. 
+                    text. text.
+                </p> <br>
+                <p>text. text. text. text. text. text. text. text. text. text. 
+                    text. text. text. text. text. text. text. text. text. text. 
+                    text. text. text. text. text. text. text. text. text. text. 
+                    text. text. text. text. text. text. text. text. text. text. 
+                    text. text.
+                </p> 
+            </div>
+        </main>
+        <div class="right-item">Google Ad</div>
+        <footer class="footer-item">Footer</footer>
+    </div>
+</body>
+</html>
